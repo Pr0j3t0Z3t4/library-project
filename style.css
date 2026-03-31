@@ -24,35 +24,116 @@ header{
     flex-direction: row;
     justify-content: space-between;
     color: var(--color1);
-    margin-left: 100px;
-    margin-right: 100px;
     margin-top: 20px;
     background-color: var(--color3);
-    border-radius: 20px;
+    border-radius: 8px;
     box-shadow:0 25px 50px -12px #000000;
+    border-style: solid;
+    border-color: var(--color1);
+    
 }
 
 h1{
-       margin-left: 100px;
+    margin-left: 100px;
     margin-right: 100px;
+    color:var(--color1) ;
+    border: 2px #ffffff;
 }
 #login{
-    color: var(--color1);
+    color: var(--color);
     background-color: var(--color4);
     height: 30px;
     width: 70px;
     border-radius: 30px;
-    box-shadow:0 25px 50px -12px #000000;
-    margin-top: 40px;
+    margin-top: 40px;    box-shadow:0 25px 50px -12px #000000;
     margin-right: 100px;
+    bottom: var(--color3);
 }
 
 main{
     background-color: var(--color3);
-    margin-left: 100px;
-    margin-right: 100px;
+
     margin-top: 20px;
-    border-radius: 20px;
+    border-radius: 8px;
     box-shadow:0 25px 50px -12px var(--color5);
 }
 
+.btn {
+  width: 1000px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid var(--color1);
+  outline: none;
+  transition: 1ms ease-in-out;
+  border-radius: 8px;
+}
+
+
+
+.btn:hover {
+  transition: 1ms ease-in-out;
+  background: var(--color5);
+}
+
+
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.hidden{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#bookForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Espaçamento automático entre os campos */
+  width: 100%;
+  max-width: 400px; /* Melhor para responsividade */
+  padding: 32px; /* Espaço interno */
+  background-color: #ffffff; /* Fundo limpo */
+  border: 1px solid #e2e8f0; /* Borda discreta */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra profissional */
+  box-sizing: border-box;
+}
+
+/* Estilo básico para os inputs acompanharem o visual */
+#bookForm input {
+  padding: 12px;
+  border: 1px solid var(--color3);
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#bookForm input:focus {
+  border-color: var(--color1); /* Destaca o campo ao digitar */
+}
+
+#bookForm button {
+  margin-top: 8px;
+  padding: 12px;
+  background-color: var(--color2);
+  color: var(--color3);
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+#bookForm button:hover {
+  opacity: 0.9;
+}
+
+fieldset{
+    width: 140px;
+    height: 60px;
+}
