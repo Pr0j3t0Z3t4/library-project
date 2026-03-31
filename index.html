@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +16,7 @@
         <h1>My Library</h1>
         <button id="login">Login</button>
     </header>
+    
     <main>
         <button class="btn">
             <span>Add book</span>
@@ -42,8 +43,36 @@
             </form>
         </div>
 
-        <div id="containerLibrary" class="main"></div>
+        <div id="containerLibrary">
+            <div class="card">
+                <div class="content">
+                    <!-- Frente do card (Capa) -->
+                    <div class="front">
+                        <div class="front-content">
+                            <strong>Nome do Livro</strong>
+                        </div>
+                    </div>
+                    
+                    <!-- Verso do card (Detalhes) -->
+                    <div class="back">
+                        <div class="img">
+                            <div class="circle"></div>
+                            <div class="circle" id="right"></div>
+                            <div class="circle" id="bottom"></div>
+                        </div>
+                        <div class="back-details">
+                            <small class="badge">Lido</small>
+                            <div class="description">
+                                <div class="title">
+                                    <p><strong>Autor do Livro</strong></p>
+                                </div>
+                                <p class="card-footer">350 Páginas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer></footer>
 </body>
 </html>
