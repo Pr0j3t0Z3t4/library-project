@@ -92,10 +92,27 @@ main {
 }
 
 .form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
+}
+.hidden {
+    display: none !important;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
 }
 
 #bookForm {
@@ -106,10 +123,11 @@ main {
     max-width: 400px;
     padding: 32px; 
     background-color: var(--color3); 
-    border: 2px solid var(--color2); /* Usando variável em vez de cor fixa */
+    border: 2px solid var(--color2);
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
     box-sizing: border-box;
+    animation: popIn 0.3s ease-out forwards;
 }
 
 #bookForm label {
